@@ -1,0 +1,59 @@
+docker images
+whoami
+cat etc/group
+cat /etc/group
+docker ps
+history
+docker pull mysql:latest
+docker run -d mysql:latest
+docker run mysql:latest
+docker run -d -e MYSQL_ROOT_PASSWORD=test@123 mysql:latest
+docker ps
+docker exec -it ea042c83ff6e bash
+sudo apt-get remove nginx
+docker run -d nginx:latest
+docker ps
+docker kill c279c9a03742
+docker rm c279c9a03742
+docker run -d -p 80:80 nginx:latest
+docker ps
+docker images
+docker ps
+ls
+cd github/
+ls
+cd simple-java-docker
+ls
+vim Dockerfile
+docker build -t java-app .
+vim Dockerfile
+docker build -t java-app .
+docker images
+docker run java-app:latest
+docker run java-app:latest
+docker run 50d8ba42f820
+docker run java-app:latest
+sudo apt-get install jdk:latest
+sudo apt-get update
+sudo apt-get install jdk:latest
+docker run java-app:latest
+cd github
+ls
+cd simple-java-docker
+ls
+docker run Java-apphhh
+cd github/
+ls
+cd simple-java-docker
+ls
+vim Dockerfile
+docker build -t java-app .
+docker run jav-app:latest
+docker run java-app:latest
+docker images
+history
+ls
+cd github
+ls
+cd two-tier-flask-app
+history
