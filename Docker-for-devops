@@ -1,0 +1,34 @@
+docker ps
+docker images
+sudo /etc/group
+docker pull mysql
+docker ps
+docket images
+docker images
+docker run -d mysql
+docker ps
+docker run mysql
+apt-get update
+sudo apt-get update
+sudo apt-get install docker.io
+docker --version
+docker images
+whoami
+sudo usermod -ag docker ubuntu && newgrp docker
+sudo usermod -aG docker ubuntu && newgrp docker
+sudo apt-get update
+sudo apt-get install docker.io
+docker --version
+ls
+cd github/
+ls
+cd github/
+ls
+cd simple-java-docker
+ls
+vim Dockerfile
+docker build -t java-app .
+docker run java-app
+docker run java-app
+docker images
+history
