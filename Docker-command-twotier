@@ -1,0 +1,53 @@
+vim Dockerfile
+docker build -t java-app .
+docker run java-app:latest
+docker images
+history
+ls
+cd github
+cd ..
+ls
+ls -l
+docker ps
+docker system prune
+docker rmi be960704dfac 3b25b682ea82
+docker run -d --name mysql -e MYSQL_ROOT_PASSWORD=root mysql:latest
+docker exec --it 0ca6e563212e
+docker exec -it 0ca6e563212e bash
+docker stop 0ca6e563212e
+docker rm 0ca6e563212e
+docker exec -it 9ba868239 bash
+docker exec -it 9ba868239ac6
+mkdir mysql-volume
+pwd
+docker run -d -v /home/ubuntu/mysql-volume:/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=root mysql:latest
+docker exec -it f6c82dd31e28 bash
+docker stop f6c82dd31e28 && rm f6c82dd31e28
+docker ps -a
+docker rm f6c82dd31e28
+docker exec -it 37a274985cea bash
+docker volume ls
+docker volume inspect 2fcf5c15795b1e92791d44b6d0e37a29738ddde352325b641b8a9ee78f742f8e
+ls
+docker volume create mysql-data
+docker volume inspect mysql-data
+cd /var/lib/docker/volumes/mysql-data/_data
+sudo su
+docker volume create nginx-volume
+docker run -d -v nginx-volume:/var -p 80:80 nginx:latest
+docker inspect nginx-volume
+git clone https://github.com/LondheShubham153/two-tier-flask-app.git
+cd two-tier-flask-app
+docker build -t flaskapp .
+docker run -d --name mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -v mysql-data:/var/lib/mysql -p 3306:3306 mysql:5.7
+docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=mydb -p 5000:5000 flaskapp:latest
+docker logs 12d7abeb85f4
+docker inspect dec9965171c6
+docker inspect 12d7abeb85f4
+docker network ls
+docker network create -d bridge twotier
+docker network inspect 7d947c4034aa
+docker stop 12d7abeb85f4
+docker rm 12d7abeb85f4
+docker run -d --name mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -v mysql-data:/var/lib/mysql -p 3306:3306 --network=twotier mysql:5.7
+docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=mydb -p 5000:5000 --network=twotier flaskapp:latest
