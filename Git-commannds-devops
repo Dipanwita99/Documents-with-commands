@@ -1,0 +1,25 @@
+git status
+git add hello-dosto.txt
+ls
+touch nibba.txt nibbi.txt
+git rm --cached hello-dosto.txt
+rm hello-dosto.txt
+git add nibbi.txt
+git add nibba.txt
+git commit -m "adding nibba nibbi"
+rm nibbi.txt
+git restore nibbi.txt
+git config --global user.name "Dipanwita99"
+git config --global user.email "deepanwitapuri1998@gmail.com"
+vim nibbi.txt
+git commit -m "adding changes to nibbi"
+cd git-for-devops
+pwd
+git branch
+git checkout -b dev
+git checkout master
+git checkout dev
+touch nibbu.txt
+git logs
+git log
+git log --oneline
